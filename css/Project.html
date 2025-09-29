@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bau Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="#">
+
+    <!--Internal/Embedded CSS-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader-circle">
+            <video autoplay muted loop playsinline>
+            <source src="assets/gmurin.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="loader-text">Loading...</p>
+    </div>
+
+    <nav>
+        <div class="navi">
+            <!--Inline CSS-->
+            <h1 style="text-align: center; color: white; font-size: 50px;">My Blog</h1>
+        </div>
+    </nav>
+
+    <div class="overlay">
+        <div class="about">
+            <h2 style="text-align: center;">About Me</h2>
+            <p>I am Bien Angelo M. Borje, I'm from Cainta and is currently studying at STI-Orca. I am an achiever and the current Grade 11 ICT Representative for the SSLG of my current school.</p>
+        </div>
+        <div class="hobbies">
+            <h2 style="text-align: center;">My Hobbies</h2>
+            <p>I have a passion for Coding, Robotics and Competing in those competitions. I like to play games, stay up late at night, sleep.</p>
+        </div>
+        <div class="faves">
+            <h2>List of Different Favorites</h2>
+            <div class="game">
+                <div class="wuwa">
+                    <img src="assets/game/wuwa.jpg" alt="Wuthering Waves">
+                    <h3>Wuthering Waves</h3>
+                    <p>Kuro Games</p>
+                </div>
+                <div class="zzz">
+                    <img src="assets/game/zzz.webp" alt="Zenless Zone Zero">
+                    <h3>Zenless Zone Zero</h3>
+                    <p>Hoyoverse</p>
+                </div>
+                <div class="rblx">
+                    <img src="assets/game/rblx.jpg" alt="Roblox">
+                    <h3>Roblox</h3>
+                    <p>Roblox Corporation</p>
+                </div>
+                <div class="mlbb">
+                    <img src="assets/game/mlbb.png" alt="Mobile Legends: Bang Bang">
+                    <h3>Mobile Legends: Bang Bang</h3>
+                    <p>Moontoon</p>
+                </div>
+            </div>
+            <div class="song">
+                <h2>Songs</h2>
+                <div class="marine">
+                    <img src="assets/song/marine.jpg" alt="Dead Ma'am's Chest">
+                    <h3>Dead Ma'am's Chest</h3>
+                    <p>Houshou Marine</p>
+                    <audio src="assets/song/dmc.mp3" controls></audio>
+                </div>
+                <div class="yoasobi">
+                    <img src="assets/song/yoasobi.jpg" alt="Racing Into the Night">
+                    <h3>Racing into the Night</h3>
+                    <p>Yoasobi</p>
+                    <audio src="assets/song/yoru-ni-kakeru.mp3" controls></audio>
+                </div>
+            </div>
+            <div class="movie">
+                <h2>Movie</h2>
+                <div class="name">
+                    <img src="assets/movie/name.webp" alt="Your Name">
+                    <h3>Your Name</h3>
+                </div>
+            </div>
+            <div class="etc">
+                <h2>Miscellaneous</h2>
+                <div class="plush">
+                    <div class="abo">
+                        <img src="assets/misc/abo.png" alt="Abo">
+                        <h3>Ado "Abo" Plush </h3>
+                    </div>
+                    <div class="gigi">
+                        <img src="assets/misc/murin.webp" alt="Gigi">
+                        <h3>Friends with U (Gigi Murin)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <h2>My Socials</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/bienangelo.borje"><img src="assets/social/fb.png" alt="Facebook"></a></li>
+                <li><a href="https://www.github.com/ihasBred"><img src="assets/social/ghub.png" alt="Github"></a></li>
+                <li><a href="https://www.discordapp.com/users/967648811604402186"><img src="assets/social/dc.webp" alt="Discord"></a></li>
+                <li><a href="https://roblox.com/users/3073382255/profile"><img src="assets/game/rblx.jpg" alt="Roblox"></a></li>
+                <li><a href="https://open.spotify.com/user/31piexmwzuqbv3jwlbr2vxltf6ti"><img src="assets/social/spot.webp" alt="Spotify"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("preloader").classList.add("hidden");
+        }, 2500); // 2.5 seconds
+    });
+    </script>
+
+</body>
+</html>
