@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  margin-top: 200px;
+}
+
+nav {
+  background: #222;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navi {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.overlay {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.overlay .title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  transition: 1s;
+}
+
+.overlay .title:hover {
+    font-size: 6rem;
+    letter-spacing: 10px;
+}
+
+.overlay .content h3 {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #333;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.overlay .content h3:hover {
+  background: #555;
+  letter-spacing: 5px;
+}
+
+.list {
+  display: none;
+  margin-top: 1rem;
+}
+.list ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.list ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #444;
+  transition: 1.5s;
+}
+
+.list ul li img:hover {
+  width: 70px;
+  height: 70px;
+}
+
+.overlay2 {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay2 .about {
+  max-width: 600px;
+  padding: 2rem;
+  background: #222;
+  border-radius: 12px;
+  text-align: center;
+}
+.overlay2 .about .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.overlay2 .about .text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    justify-content: center;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+}
